@@ -1,0 +1,56 @@
+@media (min-width: 45em) {
+  #aboutMeSection {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+body {
+	margin: 0;
+}
+p, h1 {
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+}
+h2 {
+	font-size: 1.5em;
+}
+p {
+	font-size: 1.2em;
+}
+#portrait {
+	position: absolute;
+	right:5em;
+	top:6em;
+	background-color: skyblue;
+}
+#portrait > p {
+	text-align: center;
+}
+#aboutMeInfoContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 500px);
+	grid-template-rows: 200px 250px;
+	background-color: brown;
+	padding: 1em;
+	gap: 0 80px;
+	margin-left: 5em;
+	margin-top: 6em;
+}
+#favProgramming {
+	grid-row: auto / span 2;
+}
+.aboutMeInfo {
+}
+.siteSection {
+	height: 100vh;
+	width: 100vw; 
+	max-width: 100%; /* work around horziontal scrollbar bug*/
+	overflow: scroll;
+}
+#aboutMeSection {
+	background-color: black;
+}
+#projectsSection {
+	background-color: red;
+}
