@@ -1,7 +1,43 @@
-@media (min-width: 45em) {
+@media only screen and (max-width: 1770px) {
+
+  #aboutMeInfoContainer {
+	grid-template-columns: auto auto !important;
+	gap: 0 50px !important;
+	padding-left: 5em !important;
+	padding-top: 4.5em !important;
+  }
+  #imageArea > img {
+	width: 15em !important;
+	height: 21em !important;
+  }
+  #portrait {
+	width:unset !important;
+  }
+  #imageArea {
+	width: 17em !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #portrait {
+	float: unset !important;
+	width: 100% !important;
+	position: relative !important;
+	float:unset !important;
+  }
+  #imageArea {
+	width: 100% !important;
+  }
+  #imageArea > img {
+	width: 20em !important;
+	height: 26em !important;
+  }
+  #aboutMeInfoContainer {
+	grid-template-columns: auto !important; 
+	grid-template-rows: auto !important;
+	padding-top: 0em !important;
+  } 
   #aboutMeSection {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+	height: auto;
   }
 }
 body {
@@ -19,33 +55,34 @@ p {
 	font-size: 1.2em;
 }
 #portrait {
-	background-color: skyblue;
+	/* background-color: skyblue; */
 	float:right;
 	width: 26vw;
 	position: absolute;
 	right:0;
 	top:0;
-	margin-top: 3em;
+	margin-top: 4.5em;
 }
 #imageArea {
-	width: 18em;
+	width: 25em;
 	text-align: center;
 }
 #imageArea > img {
-	width: 18em;
-	height: 24em;
+	width: 25em;
+	height: 31em;
 	object-fit:scale-down;
 }
  #aboutMeInfoContainer {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 500px);
+	/* grid-template-columns: repeat(auto-fill, 500px); */
+	grid-template-columns: 500px 500px;
 	grid-template-rows: 200px 250px;
-	width: 70vw;
+	width: 65vw;
 	float:left;
-	background-color: brown;
-	padding-left: 2.5em;
-	padding-top: 2.5em;
-	gap: 0 30px;
+	/* background-color: brown; */
+	padding-left: 10em;
+	padding-top: 4.5em;
+	gap: 0 100px;
 }
 #favProgramming {
 	grid-row: auto / span 2;
