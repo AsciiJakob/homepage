@@ -19,23 +19,33 @@ p {
 	font-size: 1.2em;
 }
 #portrait {
-	position: absolute;
-	right:5em;
-	top:6em;
 	background-color: skyblue;
+	float:right;
+	width: 26vw;
+	position: absolute;
+	right:0;
+	top:0;
+	margin-top: 3em;
 }
-#portrait > p {
+#imageArea {
+	width: 18em;
 	text-align: center;
 }
-#aboutMeInfoContainer {
+#imageArea > img {
+	width: 18em;
+	height: 24em;
+	object-fit:scale-down;
+}
+ #aboutMeInfoContainer {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 500px);
 	grid-template-rows: 200px 250px;
+	width: 70vw;
+	float:left;
 	background-color: brown;
-	padding: 1em;
-	gap: 0 80px;
-	margin-left: 5em;
-	margin-top: 6em;
+	padding-left: 2.5em;
+	padding-top: 2.5em;
+	gap: 0 30px;
 }
 #favProgramming {
 	grid-row: auto / span 2;
@@ -46,7 +56,7 @@ p {
 	height: 100vh;
 	width: 100vw; 
 	max-width: 100%; /* work around horziontal scrollbar bug*/
-	overflow: scroll;
+	overflow: hidden;
 }
 #aboutMeSection {
 	background-color: black;
