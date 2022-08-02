@@ -18,6 +18,7 @@
   }
 }
 @media only screen and (max-width: 1200px) {
+	/* mainSection Stuff */
   #portrait {
 	width: 100% !important;
 	position: relative !important;
@@ -38,6 +39,19 @@
   } 
   #aboutMeSection {
 	height: auto;
+  }
+
+
+  /* projects and socials stuff */
+  #projectsSocialsSection {
+	height: auto;
+  }
+  #SocialsSection {
+	float: unset !important;
+	width: 100vw !important;
+  } 
+  #ProjectsSection {
+	width: 100vw !important;
   }
 }
 body {
@@ -116,7 +130,7 @@ a, a:visited {
 	background-color: #121723;
 }
 #ProjectsSection {
-	width: 60vw;
+	width: 63vw;
 	height: 100%;
 	display: inline-block;
 }
@@ -136,11 +150,17 @@ a, a:visited {
 	margin: 0em;
 	font-weight: normal;
 }
+#projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 26.7rem);
+	gap: 1em;
+}
 .project {
 	background-color: #0b0e15;
 	width: 26.7rem;
-	height:10.875rem;
+	min-height: 10.875rem;
 	border: 3px solid black;
+	position: relative;
 }
 .projectHeader {
 	/* background-color: #5D2828; */
@@ -156,7 +176,12 @@ a, a:visited {
 	padding: 0.5em;
 	font-size: 0.95em;
 }
-
+.projectFooter {
+	position: absolute;
+	bottom: 0;
+	/* left:0; */
+	/* margin: 15px; */
+}
 
 
 #SocialsSection {
