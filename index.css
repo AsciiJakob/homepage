@@ -2,7 +2,7 @@
 
   #aboutMeInfoContainer {
 	grid-template-columns: auto auto !important;
-	gap: 0 50px !important;
+	gap: 0 3.125rem !important;
 	padding-left: 5em !important;
 	padding-top: 4.5em !important;
   }
@@ -19,10 +19,8 @@
 }
 @media only screen and (max-width: 1200px) {
   #portrait {
-	float: unset !important;
 	width: 100% !important;
 	position: relative !important;
-	float:unset !important;
   }
   #imageArea {
 	width: 100% !important;
@@ -58,6 +56,9 @@ h2 {
 p {
 	font-size: 1.2em;
 }
+a, a:visited {
+	color:#3F80FF;
+}
 .siteSection {
 	height: 100vh;
 	width: 100vw; 
@@ -69,15 +70,14 @@ p {
 	min-height: 100vh;
 	height: auto;
 }
-#projectsSection {
-	background-color: #315C4F;
+#projectsSocialsSection {
+	background-color: #0A0E19;
 }
 #endingSection {
 	background-color: #5D2828;
 }
 #portrait {
 	/* background-color: skyblue; */
-	float:right;
 	width: 26vw;
 	position: absolute;
 	right:0;
@@ -96,14 +96,14 @@ p {
  #aboutMeInfoContainer {
 	display: grid;
 	/* grid-template-columns: repeat(auto-fill, 500px); */
-	grid-template-columns: 500px 500px;
-	grid-template-rows: 200px 250px;
+	grid-template-columns: 31.25rem 31.25rem;
+	grid-template-rows: 12.5rem 15.625rem;
 	width: 65vw;
 	float:left;
 	/* background-color: brown; */
 	padding-left: 10em;
 	padding-top: 4.5em;
-	gap: 0 100px;
+	gap: 0 6.25rem;
 }
 #favProgramming {
 	grid-row: auto / span 2;
@@ -111,17 +111,69 @@ p {
 
 
 
-#projectsHeader {
-	margin: 3em;
+#projectsSocialsSection {
+	border-top: 3px solid black;
+}
+#ProjectsSection {
+	width: 60vw;
+	height: 100%;
+	display: inline-block;
+}
+#ProjectsSection > * {
+	margin-top: 3em;
 	margin-left: 5em;
+}
+#projectsNotice {
 	/* background-color: #28b870; */
 	/* width: 40vw; */
 }
-#projectsHeader > p {
+#projectsNotice > p {
 	margin:0;
 	font-size: 1.4em;
 }
 #projectsText {
 	margin: 0em;
 	font-weight: normal;
+}
+.project {
+	background-color: #181818;
+	width: 26.7rem;
+	height:10.875rem;
+	border: 3px solid black;
+}
+.projectHeader {
+	/* background-color: #5D2828; */
+	border-bottom: 3px solid black;
+}
+.projectHeader > h2  {
+	/* padding-top: 0.5em; */
+	margin: 0.3em;
+	font-size: 2em;
+}
+.projectContent > * {
+	margin: 0;
+	padding: 0.5em;
+	font-size: 0.95em;
+}
+
+
+
+#SocialsSection {
+	/* background-color: #3F80FF; */
+	float: right;
+	width: 35vw;
+	height: 100%;
+	border-left: 3px solid black;
+}
+
+#socialsTextContent {
+	width: 80%;
+	margin: 0 auto;
+}
+#socialsText {
+	font-weight: normal;
+	text-align: center;
+	/* margin: 3em;
+	margin-left: 5em; */
+	margin-top: 3rem;
 }
