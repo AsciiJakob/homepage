@@ -49,10 +49,31 @@
   #socialsSection {
 	float: unset !important;
 	width: 100vw !important;
+	border-left: none !important;
   } 
   #ProjectsSection {
 	width: 100vw !important;
   }
+  #projectsText {
+	margin-left: 0 !important;
+	text-align: center;
+  }
+  #projectsContent {
+	margin: 0 auto !important;
+	width:90vw;
+  }
+}
+@media only screen and (max-width: 655px) {
+	br {
+		display: none;
+	}
+	/* #projectsNotice > p {
+		font-size: unset !important;
+	} */
+	#projects {
+		grid-template-columns: repeat(auto-fill, 100%) !important;
+	}
+
 }
 body {
 	margin: 0;
@@ -134,8 +155,11 @@ a, a:visited {
 	height: 100%;
 	display: inline-block;
 }
-#ProjectsSection > * {
+/* #ProjectsSection > * {
 	margin-top: 3em;
+	margin-left: 5em;
+} */
+#projectsContent {
 	margin-left: 5em;
 }
 #projectsNotice {
@@ -145,20 +169,27 @@ a, a:visited {
 #projectsNotice > p {
 	margin:0;
 	font-size: 1.4em;
+	padding-bottom: 1em;
 }
 #projectsText {
 	margin: 0em;
 	font-weight: normal;
+	
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	/* text-align: center; */
+	margin-left: 5rem;
 }
 #projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 26.7rem);
 	gap: 1em;
 }
+
 .project {
 	background-color: #0b0e15;
-	width: 26.7rem;
-	min-height: 10.875rem;
+	/* width: 26.7rem;*/
+	min-height: 10rem;
 	border: 3px solid black;
 	position: relative;
 }
@@ -175,6 +206,10 @@ a, a:visited {
 	margin: 0;
 	padding: 0.5em;
 	font-size: 0.95em;
+}
+/* to make a little extra place for the absolutely placed footer (if any) */
+.projectContent {
+	padding-bottom: 1.5em;
 }
 .projectFooter {
 	position: absolute;
@@ -196,11 +231,15 @@ a, a:visited {
 	margin: 0 auto;
 	font-size: 1.4em;
 }
+#socialsTextContent > p {
+	margin:0;
+	margin-bottom: 0.5em;
+}
 #socialsText {
 	font-weight: normal;
 	text-align: center;
 	/* margin: 3em;
 	margin-left: 5em; */
 	margin: 0;
-	margin-top: 3rem;
+	padding: 1.5rem;
 }
