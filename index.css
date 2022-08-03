@@ -46,7 +46,7 @@
   #projectsSocialsSection {
 	height: auto;
   }
-  #SocialsSection {
+  #socialsSection {
 	float: unset !important;
 	width: 100vw !important;
   } 
@@ -62,7 +62,7 @@ p, h1, h2 {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1 {
-	font-size: 8em;
+	font-size: 6em;
 }
 h2 {
 
@@ -184,17 +184,17 @@ a, a:visited {
 }
 
 
-#SocialsSection {
+#socialsSection {
 	/* background-color: #3F80FF; */
 	float: right;
 	width: 35vw;
 	height: 100%;
 	border-left: 3px solid black;
 }
-
 #socialsTextContent {
 	width: 80%;
 	margin: 0 auto;
+	font-size: 1.4em;
 }
 #socialsText {
 	font-weight: normal;
