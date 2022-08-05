@@ -87,7 +87,7 @@
 body {
 	margin: 0;
 }
-p, h1, h2 {
+p, h1, h2, li {
 	color: white;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -95,13 +95,18 @@ h1 {
 	font-size: 6em;
 }
 h2 {
+	font-weight: normal;
+	font-size: 2.3rem;
 
 }
-p {
-	font-size: 1.2em;
+p, li {
+	font-size: 1.4em;
 }
 a, a:visited {
 	color:#3F80FF;
+}
+.hl {
+	color: #FF6262;
 }
 .siteSection {
 	height: 100vh;
@@ -141,7 +146,7 @@ a, a:visited {
 	display: grid;
 	/* grid-template-columns: repeat(auto-fill, 500px); */
 	grid-template-columns: 31.25rem 31.25rem;
-	grid-template-rows: 12.5rem 15.625rem;
+	/* grid-template-rows: 12.5rem 15.625rem; */
 	width: 65vw;
 	float:left;
 	/* background-color: brown; */
@@ -179,7 +184,7 @@ a, a:visited {
 }
 #projectsNotice > p {
 	margin:0;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	padding-bottom: 1em;
 }
 #projectsText {
@@ -241,6 +246,7 @@ a, a:visited {
 	line-height: 3.5rem;
 	display: inline-block;
 	margin-left: 1rem;
+	font-size: 1.2em;
 }
 #footerRightSide {
 	position: absolute;
@@ -250,5 +256,6 @@ a, a:visited {
 }
 #footerRightSide > p {
 	margin:0;
-	line-height: 3.5rem;;
+	line-height: 3.5rem;
+	font-size: 1.2em;
 }
