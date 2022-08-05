@@ -158,7 +158,8 @@ a, a:visited {
 #projectsSocialsSection {
 	border-top: 3px solid black;
 	background-color: #121723;
-	height: 95vh;
+	min-height: 95vh;
+	height: auto;
 }
 #ProjectsSection {
 	width: 100vw;
@@ -231,13 +232,13 @@ a, a:visited {
 #siteFooter {
 	background-color: #0A0E19;
 	border-top: 3px solid black;
-	height: 5vh;
+	height: 3.5rem;
 	overflow: hidden;
 	position: relative;
 }
 #siteFooter > p {
 	margin: 0;
-	line-height: 5vh;
+	line-height: 3.5rem;
 	display: inline-block;
 	margin-left: 1rem;
 }
@@ -249,5 +250,5 @@ a, a:visited {
 }
 #footerRightSide > p {
 	margin:0;
-	line-height: 5vh;
+	line-height: 3.5rem;;
 }
