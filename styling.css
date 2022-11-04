@@ -82,6 +82,9 @@
 		display: block !important;
 		margin-left: 1rem;
 	}
+	#projectsText {
+		font-size: 3em;
+	}
 
 }
 :root {
