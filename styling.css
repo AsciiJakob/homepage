@@ -62,9 +62,9 @@
 	br {
 		display: none;
 	}
-	/* #projectsNotice > p {
-		font-size: unset !important;
-	} */
+	#portrait {
+		margin-top: 2em !important;
+	}
 	#projects {
 		grid-template-columns: repeat(auto-fill, 100%) !important;
 	}
