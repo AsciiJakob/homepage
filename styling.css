@@ -220,6 +220,9 @@ a, a:visited {
 #projNoDistract {
 	background: linear-gradient(90deg, rgb(21, 21, 43) 0%, rgb(2, 0, 36) 100%);
 }
+#projFAQ {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,21,43,1) 100%);
+}
 .projectHeader {
 	/* background-color: #5D2828; */
 	border-bottom: 3px solid black;
