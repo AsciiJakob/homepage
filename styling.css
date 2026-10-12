@@ -215,6 +215,9 @@ a, a:visited {
 	position: relative;
 }
 #projKissMPServerlist {
+	background: linear-gradient(90deg, rgb(21, 21, 43) 0%, rgb(2, 0, 36) 100%);
+}
+#projClipCutter {
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,21,43,1) 100%);
 }
 #projNoDistract {
